@@ -11,61 +11,13 @@
     http://www.springframework.org/schema/aop
     http://www.springframework.org/schema/aop/spring-aop.xsd
     http://www.springframework.org/schema/tx
-    http://www.springframework.org/schema/tx/spring-tx.xsd"
+    http://www.springframework.org/schema/tx/spring-tx.xsd">
 
-       xmlns:context-="http://www.springframework.org/schema/context"
->
+    <import resource="spring-dao.xml"/>
 
     <contex:component-scan base-package="com.cd.coordination"/>
 
     <!-- 打开自动代理-->
     <aop:aspectj-autoproxy/>
-
-    <!--自动扫描-->
-    <context-:component-scan base-package="com.cd.coordination.dao"/>
-
-    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://localhost:3306/Coordination?useSSL=false&amp;serverTimezone=Hongkong&amp;useUnicode=true&amp;characterEncoding=utf-8"/>
-        <property name="username" value="root"/>
-        <property name="password" value="root"/>
-    </bean>
-
-    <bean id="sessionFacotry" class="org.mybatis.spring.SqlSessionFactoryBean">
-        <property name="dataSource" ref="dataSource"/>
-        <!-- 设置别名 这个包下的类可以直接使用类名-->
-        <property name="typeAliasesPackage" value="com.cd.coordination.entity"/>
-    </bean>
-
-    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="sqlSessionFactoryBeanName" value="sessionFacotry"/>
-
-        <!-- 自动扫描 所有的接口并且将接口与映射文件关联-->
-        <property name="basePackage" value="com.cd.coordination.service"/>
-    </bean>
-
-    <!--&lt;!&ndash; 事务管理器&ndash;&gt;-->
-    <!--<bean id="transationManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">-->
-        <!--<property name="dataSource" ref="dataSource"/>-->
-
-    <!--</bean>-->
-
-    <!--<tx:advice id="txAdvice" transaction-manager="transationManager">-->
-        <!--<tx:attributes>-->
-
-            <!--&lt;!&ndash;不使用事务&ndash;&gt;-->
-            <!--<tx:method name="get*" read-only="true"/>-->
-            <!--<tx:method name="find*" read-only="true"/>-->
-            <!--<tx:method name="search*" read-only="true"/>-->
-
-            <!--&lt;!&ndash;强制开启事务 &ndash;&gt;-->
-            <!--<tx:method name="*" propagation="REQUIRED"/>-->
-        <!--</tx:attributes>-->
-    <!--</tx:advice>-->
-
-    <!--<aop:config>-->
-        <!--<aop:pointcut id="txpc" expression="execution(* com.cd.coordination.*.*(..))"/>-->
-        <!--<aop:advisor advice-ref="txAdvice" pointcut-ref="txpc"/>-->
-    <!--</aop:config>-->
 
 </beans>
