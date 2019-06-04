@@ -1,58 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3efc7fd4-59da-4afb-aa34-8c93a75571f3" name="Default Changelist" comment="&quot;框架&quot;">
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/cd/coordination/LevelService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/cd/coordination/TeamService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/cd/coordination/TestUnitService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/cd/coordination/TrackService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/cd/coordination/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/cd/coordination/WordService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/cd/coordination/controller/LevelController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/cd/coordination/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/cd/coordination/controller/TeamController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/cd/coordination/controller/TestUtilController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/cd/coordination/controller/TrackController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/cd/coordination/controller/WordController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/cd/coordination/dao/CooperationDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/cd/coordination/dao/MemberDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/cd/coordination/dao/MessageDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/cd/coordination/dao/TeamDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/cd/coordination/dao/TrackDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/cd/coordination/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/cd/coordination/dao/WordDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/cd/coordination/entity/Cooperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/cd/coordination/entity/Demand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/cd/coordination/entity/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/cd/coordination/entity/IntermediateLevel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/cd/coordination/entity/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/cd/coordination/entity/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/cd/coordination/entity/Mission.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/cd/coordination/entity/Reply.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/cd/coordination/entity/SeniorLevel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/cd/coordination/entity/Team.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/cd/coordination/entity/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/cd/coordination/entity/Track.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/cd/coordination/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/cd/coordination/global/ResponseCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/cd/coordination/global/ServerResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/cd/coordination/impl/LevelServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/cd/coordination/impl/TeamImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/cd/coordination/impl/TestUnitServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/cd/coordination/impl/TrackServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/cd/coordination/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/cd/coordination/impl/WordImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/cd/coordination/impl/WordUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/resources/spring-service.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/cd/coordination/controller/JumpController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/cd/coordination/global/EncodingFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/cd/coordination/global/LoginCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/cd/coordination/global/LoginSessionListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/cd/coordination/global/loginAuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/resources/spring-web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="3efc7fd4-59da-4afb-aa34-8c93a75571f3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -70,32 +20,35 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="2" />
+          <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="java" value="56" />
+          <entry key="jsp" value="1" />
           <entry key="xml" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JAVA" value="56" />
+          <entry key="JSP" value="1" />
           <entry key="XML" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="txt" value="7" />
+          <entry key="txt" value="12" />
           <entry key="xml" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="7" />
+          <entry key="PLAIN_TEXT" value="12" />
           <entry key="XML" value="34" />
         </counts>
       </usages-collector>
@@ -104,35 +57,35 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/src/main/java/com/cd/coordination/dao/MessageDao.java">
+        <entry file="file://$PROJECT_DIR$/service/src/main/resources/com/cd/coordination/dao/MessageDao.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+            <state relative-caret-position="360">
+              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/src/main/resources/com/cd/coordination/dao/MessageDao.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="691">
-              <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/index.jsp">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/service/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
+            <state relative-caret-position="2910">
               <caret line="97" column="83" selection-start-line="97" selection-start-column="83" selection-end-line="97" selection-end-column="83" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/src/main/java/com/cd/coordination/controller/JumpController.java">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -164,11 +117,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="783">
-              <caret line="92" column="17" selection-start-line="92" selection-start-column="17" selection-end-line="92" selection-end-column="17" />
+            <state relative-caret-position="587">
+              <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -244,9 +197,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -371,10 +321,21 @@
               <item name="coordination" type="462c0819:PsiDirectoryNode" />
               <item name="global" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="coordination" type="b2602c69:ProjectViewProjectNode" />
+              <item name="architecture" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -421,6 +382,7 @@
       <updated>1559635403811</updated>
       <workItem from="1559635406397" duration="1223000" />
       <workItem from="1559636698947" duration="284000" />
+      <workItem from="1559637054720" duration="400000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;框架&quot;">
       <created>1559635764572</created>
@@ -429,25 +391,31 @@
       <option name="project" value="LOCAL" />
       <updated>1559635764572</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="&quot;可访问&quot;">
+      <created>1559637459805</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1559637459805</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1507000" />
+    <option name="totallyTimeSpent" value="1907000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Web" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25226668" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25493333" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Capture Tool" order="6" />
-      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -461,6 +429,7 @@
       <window_info anchor="bottom" id="Messages" order="10" visible="true" weight="0.330076" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -481,10 +450,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="&quot;框架&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;框架&quot;" />
+    <MESSAGE value="&quot;可访问&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;可访问&quot;" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/coordination/impl/TeamImpl.java" />
     <entry file="file://$PROJECT_DIR$/service/src/main/java/coordination/controller/TestUtilController.java" />
     <entry file="file://$PROJECT_DIR$/service/src/main/java/coordination/entity/Team.java" />
     <entry file="file://$PROJECT_DIR$/service/src/main/java/coordination/entity/Member.java" />
@@ -599,6 +568,8 @@
     <entry file="file://$PROJECT_DIR$/service/src/main/resources/com/cd/coordination/dao/UserDao.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/applicationContext.xml" />
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/cd/coordination/a.java" />
     <entry file="file://$PROJECT_DIR$/service/src/main/java/com/cd/coordination/dao/MessageDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -606,32 +577,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/resources/com/cd/coordination/dao/MessageDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="691">
-          <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/service/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
+        <state relative-caret-position="2910">
           <caret line="97" column="83" selection-start-line="97" selection-start-column="83" selection-end-line="97" selection-end-column="83" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/cd/coordination/a.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/cd/coordination/controller/JumpController.java">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/com/cd/coordination/global/LoginSessionListener.java">
       <provider selected="true" editor-type-id="text-editor" />
@@ -652,10 +603,27 @@
     <entry file="file://$PROJECT_DIR$/web/src/main/resources/spring-web.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/resources/com/cd/coordination/dao/MessageDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="783">
-          <caret line="92" column="17" selection-start-line="92" selection-start-column="17" selection-end-line="92" selection-end-column="17" />
+        <state relative-caret-position="587">
+          <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/cd/coordination/controller/JumpController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
         </state>
       </provider>
     </entry>
