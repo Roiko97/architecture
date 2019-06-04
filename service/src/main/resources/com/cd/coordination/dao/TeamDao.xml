@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.4//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cd.coordination.dao.TeamDao">
+    <resultMap id="team" type="Team">
+        <id property="id" column="id" javaType="Integer"/>
+        <result property="heading" column="heading" javaType="String"/>
+        <result property="schedule" column="schedule" javaType="String"/>
+        <result property="mark" column="mark" javaType="String"/>
+        <result property="data" column="data" javaType="String"/>
+        <result property="startT" column="startT" javaType="String"/>
+        <result property="endT" column="endT" javaType="Integer"/>
+        <result property="student_id" column="student_id" javaType="String"/>
+        <result property="level" column="level" javaType="String"/>
+    </resultMap>
+
+    <insert id="teamCreate">
+		insert into team(heading,mark,student_id,endT) values (#{heading},#{mark},#{student_id},#{end})
+	</insert>
+
+    <select id="teamId" resultMap="team">
+        select * from team
+        <where>
+            <if test="mark !=null">
+                and mark = #{mark}
+            </if>
+        </where>
+    </select>
+
+    <update id="teamRevice" parameterType="string">
+        update team
+        <set>
+            <if test="data !=null">
+                data = #{data},
+            </if>
+            <if test="schedule !=null">
+                schedule = #{schedule},
+            </if>
+            <if test="level != null">
+                level = #{level}
+            </if>
+        </set>
+        <where>
+            mark = #{mark}
+        </where>
+    </update>
+
+    <update id="teamMark" parameterType="string">
+        update users
+        <set>
+            <if test="mark != null">
+                mark = #{mark}
+            </if>
+        </set>
+        <where>
+            student_id = #{student_id}
+        </where>
+    </update>
+
+    <select id="teamFind" resultMap="team">
+        select * from team
+        <where>
+            <if test="student_id !=null">
+                and student_id = #{student_id}
+            </if>
+            <if test="mark!=null">
+                and mark=#{mark}
+            </if>
+        </where>
+    </select>
+</mapper>

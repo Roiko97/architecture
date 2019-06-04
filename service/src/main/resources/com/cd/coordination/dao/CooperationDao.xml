@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.4//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cd.coordination.dao.CooperationDao">
+    <resultMap id="cooperation" type="Cooperation">
+        <id property="id" column="id" javaType="Integer"/>
+        <result property="mark" column="mark" javaType="String"/>
+        <result property="data" column="data" javaType="String"/>
+        <result property="announcer" column="announcer" javaType="String"/>
+        <result property="heading" column="heading" javaType="String"/>
+        <result property="state" column="state" javaType="String"/>
+        <result property="releasetime" column="releasetime" javaType="String"/>
+    </resultMap>
+
+
+    <resultMap id="test" type="Test">
+        <id property="id" column="id" javaType="Integer"/>
+        <result property="mark" column="mark" javaType="String"/>
+        <result property="subject" column="subject" javaType="String"/>
+        <result property="frequency" column="frequency" javaType="String"/>
+        <result property="field" column="field" javaType="String"/>
+        <result property="process" column="process" javaType="String"/>
+        <result property="testprocess" column="testprocess" javaType="String"/>
+        <result property="result" column="result" javaType="String"/>
+        <result property="conclusion" column="conclusion" javaType="String"/>
+        <result property="remark" column="remark" javaType="String"/>
+        <result property="operator" column="operator" javaType="String"/>
+        <result property="releasetime" column="releasetime" javaType="String"/>
+    </resultMap>
+
+    <insert id="communicateInsert">
+		insert into cooperation(mark,data,announcer,state,heading) values(#{mark},#{data},#{announcer},#{state},#{heading})
+	</insert>
+
+    <select id="communicateFind" resultType="cooperation">
+        select * from cooperation
+        <where>
+            <if test="mark!=null">
+                mark=#{mark}
+            </if>
+        </where>
+        order by id DESC
+    </select>
+
+    <insert id="testUnitInsert">
+		insert into test(mark,subject,operator,frequency,field,process,testprocess,result,conclusion,remark) values(#{mark},#{subject},#{operator},#{frequency},#{field},#{process},#{testprocess},#{result},#{conclusion},#{remark})
+	</insert>
+
+    <select id="testUnitFind" resultType="test">
+        select * from test
+        <where>
+            <if test="mark!=null">
+                mark=#{mark}
+            </if>
+        </where>
+        order by id DESC
+    </select>
+
+    <delete id="testUnitDelete">
+		delete from test where mark=#{mark} and id=#{id}
+	</delete>
+
+</mapper>

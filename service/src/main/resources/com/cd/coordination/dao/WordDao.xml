@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.4//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cd.coordination.dao.WordDao">
+    <resultMap id="demo" type="Demo">
+        <id property="id" column="id" javaType="Integer"/>
+        <result property="date" column="date" javaType="String"/>
+    </resultMap>
+
+    <resultMap id="mission" type="Mission">
+        <id property="id" column="id" javaType="Integer"/>
+        <result property="name" column="name" javaType="String"/>
+        <result property="introduce" column="introduce" javaType="String"/>
+        <result property="process" column="process" javaType="String"/>
+        <result property="effect" column="effect" javaType="String"/>
+        <result property="jump" column="jump" javaType="String"/>
+    </resultMap>
+
+    <resultMap id="demand" type="Demand">
+        <id property="id" column="id" javaType="Integer"/>
+        <result property="mark" column="mark" javaType="String"/>
+        <result property="title" column="title" javaType="String"/>
+        <result property="date" column="date" javaType="String"/>
+        <result property="releasetime" column="releasetime" javaType="String"/>
+    </resultMap>
+
+    <select id="demandCheck" resultType="demand">
+        select * from demand
+        <where>
+            <if test="mark !=null">
+                and mark = #{mark}
+            </if>
+        </where>
+    </select>
+
+    <select id="demandFind" resultType="demand">
+        select * from demand
+        <where>
+            <if test="mark !=null">
+                and mark = #{mark}
+            </if>
+        </where>
+    </select>
+
+    <insert id="demandInsert">
+		insert into demand(title,date,mark) values(#{title},#{date},#{mark})
+	</insert>
+
+    <select id="demoSelect" resultType="demo">
+        select * from demo
+        <where>
+            <if test="id !=null">
+                and id = #{id}
+            </if>
+        </where>
+    </select>
+
+    <select id="demoId" resultType="demo">
+        select * from demo
+        <where>
+            <if test="id !=null">
+                and id = #{id}
+            </if>
+        </where>
+    </select>
+
+    <select id="missionId" resultType="mission">
+        select * from mission
+        <where>
+            <if test="_parameter !=null" >
+                and id = #{id}
+            </if>
+        </where>
+    </select>
+</mapper>

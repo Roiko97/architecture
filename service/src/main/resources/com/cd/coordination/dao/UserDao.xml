@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.4//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cd.coordination.dao.UserDao">
+    <resultMap id="user" type="User">
+        <id property="id" column="id" javaType="Integer"/>
+        <result property="student_id" column="student_id" javaType="String"/>
+        <result property="student_name" column="student_name" javaType="String"/>
+        <result property="password" column="password" javaType="String"/>
+        <result property="datatime" column="datatime" javaType="String"/>
+        <result property="mark" column="mark" javaType="String"/>
+        <result property="lasttime" column="lasttime" javaType="String"/>
+        <result property="thistime" column="thistime" javaType="String"/>
+    </resultMap>
+
+    <select id="userLogin" resultType="User" parameterType="string">
+        select * from users
+        <where>
+            <if test="student_id !=null">
+                and student_id = #{student_id}
+            </if>
+            <if test="password !=null">
+                and password = #{password}
+            </if>
+        </where>
+    </select>
+
+    <select id="userCheck" resultMap="user">
+        select * from users
+        <where>
+            <if test="student_id !=null">
+                and student_id = #{student_id}
+            </if>
+        </where>
+    </select>
+
+    <update id="userRevise" parameterType="string">
+        update users
+        <set>
+            <if test="password !=null">
+                password = #{password},
+            </if>
+        </set>
+        <where>
+            student_id = #{student_id}
+        </where>
+    </update>
+
+    <update id="userMark" parameterType="string">
+        update users
+        <set>
+            <if test="mark != null">
+                mark = #{mark}
+            </if>
+        </set>
+        <where>
+            student_id = #{student_id}
+        </where>
+    </update>
+
+    <update id="userTime" parameterType="string">
+        update users
+        <set>
+            <if test="lasttime !=null">
+                lasttime = #{lasttime},
+            </if>
+            <if test="thistime !=null">
+                thistime = #{thistime}
+            </if>
+        </set>
+        <where>
+            student_id = #{student_id}
+        </where>
+    </update>
+
+    <select id="userMessage" resultMap="user">
+        select * from users
+        <where>
+            <if test="student_id !=null">
+                and student_id = #{student_id}
+            </if>
+        </where>
+    </select>
+
+</mapper>

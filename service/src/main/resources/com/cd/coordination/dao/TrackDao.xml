@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.4//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cd.coordination.dao.TrackDao">
+
+    <select id="getTrack" resultType="Integer">
+        select count(*) from track where mark = #{mark} and dealTime=#{dealTime} and student_id = #{student_id}
+    </select>
+
+    <insert id="insertTrack">
+        insert into track(student_id,dealTime,mark) values (#{student_id} , #{dealTime} ,#{mark} )
+    </insert>
+
+    <select id="cs" resultType="Track">
+        select * from track
+    </select>
+</mapper>

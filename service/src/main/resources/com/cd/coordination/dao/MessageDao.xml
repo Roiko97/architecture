@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.4//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cd.coordination.dao.MessageDao">
+    <resultMap id="message" type="Message">
+        <id property="id" column="id" javaType="Integer"/>
+        <result property="sendid" column="sendid" javaType="String"/>
+        <result property="receiveid" column="receiveid" javaType="String"/>
+        <result property="result" column="result" javaType="String"/>
+        <result property="releasetime" column="releasetime" javaType="String"/>
+        <result property="mark" column="mark" javaType="String"/>
+        <result property="sendname" column="sendname" javaType="String"/>
+        <result property="heading" column="heading" javaType="String"/>
+    </resultMap>
+
+    <insert id="sendMessage">
+		insert into message(sendid,receiveid,result,mark,sendname,heading) values(#{sendid},#{receiveid},#{result},#{mark},#{sendname},#{heading})
+	</insert>
+
+    <select id="messageFind" resultType="message">
+        select * from message
+        <where>
+            <if test="receiveid !=null">
+                and receiveid = #{receiveid}
+            </if>
+        </where>
+    </select>
+
+    <select id="messageGet" resultType="message">
+        select * from message
+        <where>
+            <if test="receiveid !=null">
+                and receiveid = #{receiveid}
+            </if>
+        </where>
+    </select>
+
+    <update id="messageRevise" parameterType="string">
+        update message
+        <set>
+            <if test="result !=null">
+                result = #{result}
+            </if>
+        </set>
+        <where>
+            receiveid = #{receiveid}
+        </where>
+    </update>
+
+    <delete id="deleteMessage" parameterType="string">
+		delete from message where mark = #{mark} and receiveid = #{receiveid}
+	</delete>
+
+</mapper>
