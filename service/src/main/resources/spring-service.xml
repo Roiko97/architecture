@@ -4,21 +4,28 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:aop="http://www.springframework.org/schema/aop"
        xmlns:mvc="http://www.springframework.org/schema/mvc"
-       xmlns:tx="http://www.springframework.org/schema/tx" xmlns:contex="http://www.springframework.org/schema/context"
+       xmlns:contex="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
+
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd
     http://www.springframework.org/schema/aop
     http://www.springframework.org/schema/aop/spring-aop.xsd
-    http://www.springframework.org/schema/tx
-    http://www.springframework.org/schema/tx/spring-tx.xsd
     http://www.springframework.org/schema/mvc
     http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
+
     <import resource="spring-dao.xml"/>
-    <contex:component-scan base-package="com.cd.coordination"/>
-    <context:component-scan base-package="com.cd.coordination.controller"/>
+    <contex:component-scan base-package="com.cd.coordination">
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </contex:component-scan>
+
+    <context:component-scan base-package="com.cd.coordination"  use-default-filters="false">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+
+    <mvc:default-servlet-handler/>
     <mvc:annotation-driven/>
     <!-- 打开自动代理-->
     <aop:aspectj-autoproxy/>
