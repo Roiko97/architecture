@@ -1,4 +1,4 @@
-spring-web.xmlpackage com.cd.coordination.global;
+package com.cd.coordination.global;
 
 import javax.servlet.http.HttpSession;
 import java.util.HashMap;

@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.servlet.http.HttpSession;
 
 @Controller("levelController")
-@RequestMapping("/level")
+@RequestMapping("level")
 public class LevelController {
 
     @Autowired
